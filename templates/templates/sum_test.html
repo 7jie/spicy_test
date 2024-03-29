@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<body>
+<style type="text/css">
+  body{
+     background:aqua;
+}
+#test{
+  background-color:#aaa;
+  width:100px;
+  height:30px;
+  text-align:center;
+}
+span{
+  width:40px;
+  display: inline-block;
+  font-size: 10px;
+}
+#sum{
+/*   position: absolute; */
+}
+button{
+  width:28px;
+  height:30px;
+/*   rgba:(255,255,255,0.1) */
+  border:none;
+  margin:0;
+  display: inline-block;
+}
+#flex-test{
+  display:flex;
+  flex-direction:column;
+}
+div{
+  display:inline-block;
+}
+.r{
+  background-color:#fad648;
+}
+</style>
+
+  <div id="test"class="h">
+    <button id="sum"class="le">-</button><span>珍珠</span>
+    <button class="r">+</button>
+  </div>
+  <div id="test"class="h">
+    <button id="sum"  class="le">-</button><span>椰果</span>
+    <button class="r">+</button>
+  </div>
+  <div id="test"class="h">
+    <button id="sum" class="le">-</button><span>仙草凍</span>
+    <button class="r">+</button>
+  </div>
+  <div id="test"class="h">
+    <button id="sum" class="le">-</button><span>牛奶</span>
+    <button class="r">+</button>
+  </div>
+  <div id="test"class="h">
+    <button id="sum" class="le">-</button><span>檸檬</span>
+    <button class="r">+</button>
+  </div>
+    <div>
+     <div id="test" class="h">
+    <button class="le" id="sum">-</button><span>梅子</span>
+    <button class="r">+</button>
+       </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      
+$('.le').click(function(){
+    console.log("-"+$(this).next().text())
+})
+
+$('.r').click(function(){
+    console.log("+"+$(this).prev().text())
+})
+    </script>
+</body>
+</html>
